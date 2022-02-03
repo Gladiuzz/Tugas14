@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 14</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <div class="w3-display-container" id="header">
+        <img src="images/—Pngtree—meng pet animal dog black_828008.jpg" class="banner-image w3-animate-opacity">
+        <div class="w3-display-middle w3-large w3-xxlarge w3-animate-opacity">Pet Website</div>
+    </div>
+    <!-- Navbar -->
+    <div id="navbar">
+        <ul class="navbar">
+            <li class=" w3-bar-item w3-button"><button class=" w3-bar-item w3-button" onclick="openMenu('Home')">Home</button></li>
+            <li class=" w3-bar-item w3-button"><button class=" w3-bar-item w3-button" onclick="openMenu('Persia')">Persia</button></li>
+            <li class=" w3-bar-item w3-button"><button class=" w3-bar-item w3-button" onclick="openMenu('Abisnia')">Abisnia</button></li>
+            <li class=" w3-bar-item w3-button"><button class=" w3-bar-item w3-button" onclick="openMenu('Sphnyx')">Sphnyx</button></li>
+          </ul>
+    </div>
+    <!-- Content -->
+    <div id="Home" class="w3-container w3-center content">
+        <h2>Selamat Datang</h2>
+        <p>Saya Hasin Bashari Panansah dengan nim 10121187</p>
+    </div>
+
+    <div id="Persia" class="w3-container w3-center content" style="display:none">
+        <h2>Kucing Persia</h2>
+        <p>Kucing Persia merupakan kucing ras yang banyak dipelihara di Indonesia. Ciri khas kucing ini adalah hidung pesek, badan gemuk, dan berbulu tebal. Berikut ciri, jenis, dan gambar kucing persia.</p>
+        <img class="w3-animate-zoom" src="images/persia.jfif" >
+    </div>
+
+    <div id="Abisnia" class="w3-container w3-center content" style="display:none">
+        <h2>Kucing Abisnia</h2>
+        <p>Kucing abisinia adalah salah satu ras kucing berbulu pendek tertua yang pernah diketahui. Abisinia menyerupai lukisan dan patung yang berasal dari zaman Mesir Kuno.</p>
+        <img class="w3-animate-zoom" src="images/Abisnia.jfif" style="width:30%" height="50%">
+    </div>
+
+    <div id="Sphnyx" class="w3-container w3-center content" style="display:none">
+        <h2>Kucing Sphnyx</h2>
+        <p>Sphynx merupakan salah satu ras kucing dengan penampilan yang begitu berbeda dari kucing pada umumnya.</p>
+        <img class="w3-animate-zoom" src="images/sphnyx.jfif" style="width:30%" height="50%">
+    </div>
+
+    <!-- Footer -->
+    <div class="Footer"></div>
+</body>
+<script>
+    function openMenu(menu) {
+    var i;
+    var x = document.getElementsByClassName("content");
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+    }
+    document.getElementById(menu).style.display = "block";
+    }
+</script>
+</html>
